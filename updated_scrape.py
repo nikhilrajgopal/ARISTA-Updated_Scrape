@@ -297,10 +297,10 @@ def add_or_update_file_manually(file_url):
 def print_metadata_summary():
     metadata = load_metadata()
     if not metadata:
-        print("📂 No metadata found.")
+        print("No metadata found.")
         return
 
-    print("\n📋 Document Metadata Summary:")
+    print("\n Document Metadata Summary:")
     for filename, info in metadata.items():
         print(f"{filename}")
         print(f"   ↳ URL: {info.get('url', 'N/A')}")
